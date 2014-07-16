@@ -1,0 +1,71 @@
+# freshshell.com
+#
+# Examples:
+#
+#   fresh twe4ked/dotfiles shell/functions/\*
+#   fresh jasoncodes/dotfiles shell/aliases/rails.sh
+#   fresh jasoncodes/dotfiles config/tmux.conf --file
+#
+# See http://freshshell.com/readme for documentation.
+
+fresh freshshell/fresh bin/fresh --bin
+
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
+
+fresh jasoncodes/dotfiles shell/aliases/\*
+fresh jasoncodes/dotfiles shell/functions/\*
+fresh jasoncodes/dotfiles shell/config/path.sh
+fresh jasoncodes/dotfiles shell/config/pager.sh
+fresh jasoncodes/dotfiles shell/config/hitch.sh
+fresh jasoncodes/dotfiles shell/config/chruby.sh
+fresh jasoncodes/dotfiles shell/config/direnv.sh
+fresh jasoncodes/dotfiles shell/config/heroku.sh
+fresh jasoncodes/dotfiles shell/config/filters.sh
+fresh jasoncodes/dotfiles shell/config/ctrlc.sh
+fresh jasoncodes/dotfiles shell/config/git.sh
+fresh jasoncodes/dotfiles shell/config/prompt.sh
+fresh jasoncodes/dotfiles shell/config/tmux.sh
+fresh jasoncodes/dotfiles shell/\*
+
+fresh jasoncodes/dotfiles config/\* --file
+
+fresh-options --file=~/.vimrc --marker=\"
+  fresh jasoncodes/dotfiles vim/leader.vim
+  fresh twe4ked/dotfiles vim/vundle_before.vim
+  fresh jasoncodes/dotfiles vim/vundle.vim
+
+# fresh jasoncodes/dotfiles vim/plugins/\*.vim
+  fresh jasoncodes/dotfiles vim/plugins/ack.vim
+  fresh jasoncodes/dotfiles vim/plugins/ctrlp.vim
+  fresh jasoncodes/dotfiles vim/plugins/detectindent.vim
+  fresh jasoncodes/dotfiles vim/plugins/eunuch.vim
+  fresh jasoncodes/dotfiles vim/plugins/fugitive.vim
+  fresh jasoncodes/dotfiles vim/plugins/indent-guides.vim
+  fresh jasoncodes/dotfiles vim/plugins/markdown.vim
+#  fresh jasoncodes/dotfiles vim/plugins/quickfixsigns.vim
+  fresh jasoncodes/dotfiles vim/plugins/rooter.vim
+  fresh jasoncodes/dotfiles vim/plugins/ruby.vim
+  fresh jasoncodes/dotfiles vim/plugins/sudoedit.vim
+  fresh jasoncodes/dotfiles vim/plugins/unimpaired.vim
+  fresh jasoncodes/dotfiles vim/plugins/gitgutter.vim
+
+  fresh twe4ked/dotfiles vim/vundle_after.vim
+  fresh jasoncodes/dotfiles vim/global.vim
+  fresh jasoncodes/dotfiles vim/config/\*.vim
+  fresh jasoncodes/dotfiles vim/functions.vim
+  fresh jasoncodes/dotfiles vim/mappings.vim
+  fresh jasoncodes/dotfiles vim/mappings/pasteboard.vim
+  fresh jasoncodes/dotfiles vim/mappings/indent.vim
+  fresh jasoncodes/dotfiles vim/mappings/whitespace.vim
+  fresh jasoncodes/dotfiles vim/auto_commands.vim
+  fresh hackling/dotfiles vim/keybindings/onebutton.vim --ref=origin/bash
+fresh-options
+fresh jasoncodes/dotfiles vim/gvimrc --file
+fresh jasoncodes/dotfiles vim/colors --file=~/.vim/colors/
+
+init_vim() {
+  if which vim &> /dev/null && ! [ -d $HOME/.vim/bundle/vundle ]; then
+    vim || [ -d $HOME/.vim/bundle/vundle ]
+  fi
+}
