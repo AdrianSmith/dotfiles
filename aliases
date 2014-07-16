@@ -1,0 +1,7 @@
+# Projects
+alias e='cd ~/Development/Ennova/envision'
+alias enw='cd ~/Development/Ennova/websites/ennova'
+alias evw='cd ~/Development/Ennova/websites/envision'
+alias stockmgr='cd ~/Development/Rails/stockmgr'
+alias geom='cd ~/Development/Ruby/eng/geom'
+alias kdo='cd ~/Development/Rails/kdo'
