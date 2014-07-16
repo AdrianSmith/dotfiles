@@ -34,8 +34,8 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/leader.vim
   fresh twe4ked/dotfiles vim/vundle_before.vim
   fresh jasoncodes/dotfiles vim/vundle.vim
+  fresh vim/vundle.vim
 
-# fresh jasoncodes/dotfiles vim/plugins/\*.vim
   fresh jasoncodes/dotfiles vim/plugins/ack.vim
   fresh jasoncodes/dotfiles vim/plugins/ctrlp.vim
   fresh jasoncodes/dotfiles vim/plugins/detectindent.vim
@@ -43,7 +43,6 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/plugins/fugitive.vim
   fresh jasoncodes/dotfiles vim/plugins/indent-guides.vim
   fresh jasoncodes/dotfiles vim/plugins/markdown.vim
-#  fresh jasoncodes/dotfiles vim/plugins/quickfixsigns.vim
   fresh jasoncodes/dotfiles vim/plugins/rooter.vim
   fresh jasoncodes/dotfiles vim/plugins/ruby.vim
   fresh jasoncodes/dotfiles vim/plugins/sudoedit.vim
