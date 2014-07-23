@@ -27,7 +27,10 @@ fresh jasoncodes/dotfiles shell/config/filters.sh
 fresh jasoncodes/dotfiles shell/config/ctrlc.sh
 fresh jasoncodes/dotfiles shell/config/git.sh
 fresh jasoncodes/dotfiles shell/config/prompt.sh
-fresh jasoncodes/dotfiles shell/config/tmux.sh
+fresh-options --file=~/.tmux.conf --marker=\#
+  fresh jasoncodes/dotfiles config/tmux.conf
+  fresh nathanaelkane/dotfiles config/tmux/ctrlg.conf
+fresh-options
 fresh jasoncodes/dotfiles shell/\*
 
 fresh jasoncodes/dotfiles config/\* --file
