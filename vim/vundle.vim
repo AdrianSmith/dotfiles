@@ -11,3 +11,6 @@ let g:NERDTreeMinimalUI       = 1
 let g:NERDTreeDirArrows       = 1
 
 noremap <Leader>n :NERDTreeToggle<CR>
+
+Bundle 'Lokaltog/vim-easymotion'
+let g:EasyMotion_leader_key = '<Leader>e'
