@@ -49,11 +49,11 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/plugins/fugitive.vim
   fresh jasoncodes/dotfiles vim/plugins/indent-guides.vim
   fresh jasoncodes/dotfiles vim/plugins/markdown.vim
-  fresh jasoncodes/dotfiles vim/plugins/rooter.vim
   fresh jasoncodes/dotfiles vim/plugins/ruby.vim
   fresh jasoncodes/dotfiles vim/plugins/sudoedit.vim
   fresh jasoncodes/dotfiles vim/plugins/unimpaired.vim
   fresh jasoncodes/dotfiles vim/plugins/gitgutter.vim
+  fresh jasoncodes/dotfiles vim/plugins/tcomment.vim
 
   fresh twe4ked/dotfiles vim/vundle_after.vim
   fresh jasoncodes/dotfiles vim/global.vim
