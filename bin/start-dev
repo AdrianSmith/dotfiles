@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# session name
+sn=$(basename $PWD)
+
+tmux new-window -t "$sn:1" -n vim
+tmux send-keys -t "$sn:1" 'vim' Enter
+
+tmux new-window -t "$sn:2" -n server
+tmux send-keys -t "$sn:2" 'rails server' Enter
+
+tmux new-window -t "$sn:3" -n psql
+tmux send-keys -t "$sn:3" 'psql' Enter
+
+tmux new-window -t "$sn:4" -n git
+tmux send-keys -t "$sn:4" 'git up' Enter
+
+# Select window #1 and attach to the session
+tmux select-window -t "$sn:1"
+tmux -2 attach-session -t "$sn"
